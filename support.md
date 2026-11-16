@@ -11,7 +11,7 @@ Tum Tum turns your grocery receipts into a kitchen list and helps you eat food w
 ## Get help
 
 - In the app: **Settings > Help & privacy > Send feedback**
-- Email: **dhiraj.bayar@gmail.com**
+- Email: **support@tumtumapp.com**
 
 We usually reply within two working days.
 

@@ -37,6 +37,6 @@ Please send only your own grocery receipts and grocery photos, and don't try to 
 
 ## Contact
 
-Questions or problems: **Settings > Help & privacy > Send feedback** in the app, or email **dhiraj.bayar@gmail.com**.
+Questions or problems: **Settings > Help & privacy > Send feedback** in the app, or email **support@tumtumapp.com**.
 
 [Privacy policy](privacy.html) · [Support](support.html)

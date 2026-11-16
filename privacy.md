@@ -90,7 +90,7 @@ Tum Tum is not meant for children under 13, and we do not knowingly collect info
 
 - Turn off usage counts, reminders or read-aloud in Settings at any time. Photos are read only when you scan one, and cooking questions go to Anthropic only when you ask one with Plus.
 - Delete everything on your iPhone with **Delete all my data**.
-- To ask for server records to be removed sooner, or for any privacy question, use **Settings > Help & privacy > Send feedback** or email **dhiraj.bayar@gmail.com**.
+- To ask for server records to be removed sooner, or for any privacy question, use **Settings > Help & privacy > Send feedback** or email **support@tumtumapp.com**.
 - Depending on where you live (for example California or the EU), you may have rights to see, correct or delete your information. We will honor those requests.
 
 ## Changes
