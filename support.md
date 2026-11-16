@@ -1,4 +1,6 @@
 ---
+layout: default
+description: "Help with Tum Tum: scanning receipts, Tum Tum Plus, reminders, timers, deleting your data and how to contact us."
 title: Support
 ---
 

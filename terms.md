@@ -1,4 +1,6 @@
 ---
+layout: default
+description: "The terms for using Tum Tum, the iPhone app that turns grocery receipts into a kitchen list: Plus subscription, estimates and your responsibilities."
 title: Terms of use
 ---
 
@@ -10,7 +12,7 @@ Tum Tum is licensed to you under **Apple's Standard License Agreement** (the "Li
 
 ## Estimates, not promises
 
-Best-by dates marked "USDA estimate", leftover "eat by" days, nutrition numbers, daily calorie and nutrient goals in My plate, what eaten food cost and recipe ideas are estimates to help you plan. They are not food-safety, medical or diet advice. Talk to a doctor before big changes to how you eat. When in doubt about a food, check it yourself or throw it out.
+Best-by dates, leftover "eat by" days, nutrition numbers, daily calorie and nutrient goals in My plate, what eaten food cost and recipe ideas are estimates to help you plan. They are not food-safety, medical or diet advice. Talk to a doctor before big changes to how you eat. When in doubt about a food, check it yourself or throw it out.
 
 ## AI reading can make mistakes
 

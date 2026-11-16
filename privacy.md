@@ -1,4 +1,6 @@
 ---
+layout: default
+description: "What Tum Tum collects, what stays on your iPhone, what our server keeps and for how long, and who else is involved. No account, no ads."
 title: Privacy policy
 ---
 
