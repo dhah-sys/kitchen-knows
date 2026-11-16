@@ -4,7 +4,7 @@ title: Privacy policy
 
 # Privacy policy
 
-Effective November 14, 2026. Tum Tum, made by Dhiraj Pandey.
+Effective November 15, 2026. Tum Tum, made by Dhiraj Pandey.
 
 Tum Tum helps you keep track of the food you buy and eat it before it goes bad. We built it to know as little about you as possible. There is no account, no sign-up and no advertising, and we do not sell or share your information for advertising or tracking.
 
@@ -16,9 +16,9 @@ You can remove all of it at any time in **Settings > Help & privacy > Delete all
 
 ## Photos read by AI: receipts and groceries
 
-Tum Tum can read a photo of a grocery receipt (one photo, or two for a long receipt), a receipt file (PDF or picture) you open in the app, or a photo of groceries without a receipt. Before the first photo ever leaves your iPhone, Tum Tum asks your permission. After that, a photo is sent only when you scan one. **Delete all my data** also takes back your permission, and the app asks again before the next scan.
+Tum Tum can read a photo of a grocery receipt (one photo, or two for a long receipt), a receipt file (PDF or picture) you open in the app, or a photo of groceries without a receipt. A photo leaves your iPhone only when you scan one; nothing is sent in the background.
 
-With your permission, the photo goes through our server to **Anthropic**, the company that makes the Claude AI model, which reads the store, items, prices and date (for a groceries photo, only the names of the foods it sees). The answer comes back to your iPhone, where you check it before anything is added to your Kitchen.
+When you scan, the photo goes through our server to **Anthropic**, the company that makes the Claude AI model, which reads the store, items, prices and date (for a groceries photo, only the names of the foods it sees). The answer comes back to your iPhone, where you check it before anything is added to your Kitchen.
 
 - A receipt can show the last digits of a card, a member number, a store location or a name. Our server does not keep the photo.
 - Anthropic receives the photo only to read it. Under its commercial terms, as we understand them today, it does not use this data to train its models and deletes it within 30 days. It keeps it longer (up to 2 years) only if it is flagged under its usage policy, or if the law requires.
@@ -51,7 +51,7 @@ It does not keep your name, email, your iPhone's location, the receipt photo, yo
 
 Quick kitchen questions to Ask Tum Tum (what you have, what to eat first, what you spent, how long a food keeps) are answered on your iPhone, with Apple's on-device model on iPhones that have it. Update kitchen works on your iPhone too. These questions and changes are not sent to us.
 
-Cooking questions (a recipe, a swap, how to cook something) can be answered by **Anthropic's** Claude AI with Tum Tum Plus, including its free trial. Before the first one, Tum Tum asks your permission. **Not now** keeps Ask on your iPhone, and **Delete all my data** takes your permission back. With your permission, the question goes through our server to Anthropic with the food names in your Kitchen (no amounts, prices or receipts) and your last few messages in that chat, so the answer can use what you have. Anthropic receives them only to answer. Under its commercial terms, as we understand them today, it does not use this data to train its models and deletes it within 30 days, keeping it longer only if it is flagged under its usage policy or the law requires. Our server does not keep the question or the answer, only counts (see **Our server**).
+Cooking questions (a recipe, a swap, how to cook something) can be answered by **Anthropic's** Claude AI with Tum Tum Plus, including its free trial. Quick kitchen questions are answered on your iPhone. A cooking question goes through our server to Anthropic with the food names in your Kitchen (no amounts, prices or receipts) and your last few messages in that chat, so the answer can use what you have. Anthropic receives them only to answer. Under its commercial terms, as we understand them today, it does not use this data to train its models and deletes it within 30 days, keeping it longer only if it is flagged under its usage policy or the law requires. Our server does not keep the question or the answer, only counts (see **Our server**).
 
 If you speak to Tum Tum, Apple's speech recognition turns it into text; Tum Tum asks for the microphone only when you start speaking. Reading a cooking step aloud uses your iPhone's built-in voice.
 
@@ -86,7 +86,7 @@ Tum Tum is not meant for children under 13, and we do not knowingly collect info
 
 ## Your choices and rights
 
-- Turn off usage counts, reminders or read-aloud in Settings at any time. Photos are read only when you scan one, and cooking questions go to Anthropic only after you agree.
+- Turn off usage counts, reminders or read-aloud in Settings at any time. Photos are read only when you scan one, and cooking questions go to Anthropic only when you ask one with Plus.
 - Delete everything on your iPhone with **Delete all my data**.
 - To ask for server records to be removed sooner, or for any privacy question, use **Settings > Help & privacy > Send feedback** or email **dhiraj.bayar@gmail.com**.
 - Depending on where you live (for example California or the EU), you may have rights to see, correct or delete your information. We will honor those requests.
