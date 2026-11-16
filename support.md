@@ -25,7 +25,7 @@ Open **iPhone Settings > your name > Subscriptions > Tum Tum**. Deleting the app
 In the app, open the Plus screen and tap **Restore purchases**.
 
 **Where do my receipt photos go?**
-Only when you scan, and only after you agree, the photo goes through our server to Anthropic's Claude AI to be read. We don't keep the photo. Details are in the [privacy policy](privacy.html).
+Only when you scan, the photo goes through our server to Anthropic's Claude AI to be read. We don't keep the photo. Details are in the [privacy policy](privacy.html).
 
 **A receipt was read wrong.**
 You can fix or remove any item before tapping Confirm, and edit any food later in Kitchen.
