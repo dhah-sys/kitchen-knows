@@ -3,11 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tum Tum: your pantry and fridge, sorted</title>
+<title>Tum Tum: pantry and fridge tracker that reads your grocery receipts</title>
 <meta name="description" content="Snap your grocery receipt or your groceries. Tum Tum sorts every food into your fridge, freezer and pantry, and shows what to eat first. For iPhone.">
+<link rel="canonical" href="https://tumtumapp.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tum Tum">
+<meta property="og:url" content="https://tumtumapp.com/">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:title" content="Tum Tum: your pantry and fridge, sorted">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tum Tum","url":"https://tumtumapp.com/"},{"@type":"Organization","name":"Tum Tum","url":"https://tumtumapp.com/","logo":"https://tumtumapp.com/img/icon.png"},{"@type":"MobileApplication","name":"Tum Tum","operatingSystem":"iOS","applicationCategory":"LifestyleApplication","description":"Snap a grocery receipt or your groceries. Tum Tum sorts every food into your fridge, freezer, pantry and counter, shows what to eat first and suggests dinners from what you have.","url":"https://tumtumapp.com/","image":"https://tumtumapp.com/img/icon.png","author":{"@type":"Person","name":"Dhiraj Pandey"}}]}</script>
 <meta property="og:description" content="Snap your groceries. Tum Tum keeps your kitchen list and shows what to eat first.">
-<meta property="og:image" content="https://tumtumapp.com/img/01-groceries.jpg">
+<meta property="og:image" content="https://tumtumapp.com/img/share.jpg">
 <meta name="theme-color" content="#fbf5e6">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
@@ -87,6 +93,7 @@
   .f1 { top: 40px; left: 6%; } .f2 { top: 70px; right: 4%; } .f3 { bottom: 70px; left: 2%; } .f4 { bottom: 40px; right: 8%; }
   .f2 img { animation-delay: -1.5s; } .f3 img { animation-delay: -3s; } .f4 img { animation-delay: -4.5s; }
   @keyframes drift { 50% { transform: translateY(-14px) rotate(8deg); } }
+  .plusline { font-size: 14px; color: var(--soft); margin: 14px 0 0; max-width: 30em; }
   .tap-hint { position: absolute; bottom: 6px; font-size: 24px; transform: rotate(-3deg); }
 
   /* demo */
@@ -164,6 +171,13 @@
   .again { margin-top: 14px; border: 0; background: var(--green); color: #fff; font: 600 17px Inter, sans-serif; padding: 13px 22px; border-radius: 14px; cursor: pointer; }
   .confetti { position: absolute; width: 34px; pointer-events: none; z-index: 20; }
 
+  /* more */
+  .more-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .more-grid a { display: flex; align-items: center; gap: 12px; background: var(--card); border-radius: 18px; padding: 18px 20px; box-shadow: var(--shadow); text-decoration: none; font-weight: 600; transition: transform .25s; }
+  .more-grid a:hover { transform: translateY(-3px); color: var(--green); }
+  .more-grid b { font-size: 26px; }
+  @media (max-width: 860px) { .more-grid { grid-template-columns: 1fr; } }
+
   /* promise */
   .promise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
   .promise div { background: var(--card); border-radius: 22px; padding: 26px; box-shadow: var(--shadow); transition: transform .3s; }
@@ -177,6 +191,7 @@
   .end img.wave { width: 200px; cursor: pointer; transition: transform .3s cubic-bezier(.3, 1.6, .5, 1); }
   .end img.wave:hover { transform: rotate(-6deg) scale(1.05); }
   .end h2 { margin-top: 6px; }
+  footer { padding-bottom: 96px !important; }
   footer { border-top: 1px solid rgba(0,0,0,.08); padding: 26px 0 40px; color: var(--soft); font-size: 15px; display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: space-between; }
   footer nav a { margin-right: 18px; }
 
@@ -216,7 +231,7 @@
     .pot .tip { right: 52px; font-size: 18px; }
   }
   @media (max-width: 480px) {
-    header nav a:not(:last-child) { display: none; }
+    header nav a:last-child { display: none; }
     .tumtum { width: 210px; }
   }
   html { overflow-x: clip; }
@@ -233,7 +248,7 @@
 <header>
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon.png" alt=""><span>Tum Tum</span></a>
-    <nav><a href="#try">Try it</a><a href="#play">Play</a><a href="support.html">Support</a></nav>
+    <nav><a href="/features/">Features</a><a href="/blog/">Blog</a><a href="#play">Play</a></nav>
   </div>
 </header>
 
@@ -247,16 +262,17 @@
         <a class="ghost" href="#try">Try it right here ↓</a>
       </div>
       <span class="note hand">no account, no ads ✓</span>
+      <p class="plusline">Scanning comes with Tum Tum Plus, with a free trial. Your kitchen list, shopping list and dinner ideas are free.</p>
     </div>
     <div class="stage" id="stage">
       <div class="glow"></div>
-      <div class="floaty f1" data-depth="18"><img src="img/food/Strawberries.png" alt=""></div>
-      <div class="floaty f2" data-depth="26"><img src="img/food/Milk.png" alt=""></div>
-      <div class="floaty f3" data-depth="22"><img src="img/food/Avocado.png" alt=""></div>
-      <div class="floaty f4" data-depth="14"><img src="img/food/Banana.png" alt=""></div>
+      <div class="floaty f1" data-depth="18"><img src="img/food/Strawberries.png" alt="" width="160" height="160"></div>
+      <div class="floaty f2" data-depth="26"><img src="img/food/Milk.png" alt="" width="160" height="160"></div>
+      <div class="floaty f3" data-depth="22"><img src="img/food/Avocado.png" alt="" width="160" height="160"></div>
+      <div class="floaty f4" data-depth="14"><img src="img/food/Banana.png" alt="" width="160" height="160"></div>
       <div class="tumtum" id="tumtum" role="button" tabindex="0" aria-label="Tum Tum. Tap to say hi.">
         <div class="bubble" id="bubble">Hi! I'm Tum Tum.</div>
-        <img id="tt" src="img/tt/TumTumRest.png" alt="Tum Tum, a little tomato">
+        <img id="tt" src="img/tt/TumTumRest.png" alt="Tum Tum, a little tomato" width="440" height="420" fetchpriority="high">
       </div>
       <span class="tap-hint hand" id="taphint">tap me!</span>
     </div>
@@ -298,12 +314,12 @@
 
   <section class="story" aria-label="How Tum Tum helps">
     <div class="steps">
-      <div class="step" data-shot="0"><span class="num hand">1.</span><h3>Snap the receipt</h3><p>Or just the bags on the counter. One photo, and every food is named.</p><img class="mobile-shot" src="img/02-receipt.jpg" alt="" loading="lazy"></div>
-      <div class="step" data-shot="1"><span class="num hand">2.</span><h3>Everything in its place</h3><p>Fridge, freezer, pantry, counter. Your whole kitchen in your pocket.</p><img class="mobile-shot" src="img/03-kitchen.jpg" alt="" loading="lazy"></div>
-      <div class="step" data-shot="2"><span class="num hand">3.</span><h3>Eat it before it goes bad</h3><p>Tum Tum shows what to use first, every day.</p><img class="mobile-shot" src="img/04-eat-first.jpg" alt="" loading="lazy"></div>
-      <div class="step" data-shot="3"><span class="num hand">4.</span><h3>Dinner from what you have</h3><p>Ideas that use what's already in your kitchen.</p><img class="mobile-shot" src="img/05-dinner.jpg" alt="" loading="lazy"></div>
-      <div class="step" data-shot="4"><span class="num hand">5.</span><h3>Shop without double buying</h3><p>Your list knows what you already have at home.</p><img class="mobile-shot" src="img/07-shopping.jpg" alt="" loading="lazy"></div>
-      <div class="step" data-shot="5"><span class="num hand">6.</span><h3>Grow a little garden</h3><p>Every food you eat helps Tum Tum's garden grow.</p><img class="mobile-shot" src="img/06-garden.jpg" alt="" loading="lazy"></div>
+      <div class="step" data-shot="0"><span class="num hand">1.</span><h3>Snap the receipt</h3><p>Or just the bags on the counter. One photo, and every food is named.</p><img class="mobile-shot" src="img/02-receipt.jpg" alt="" loading="lazy" width="600" height="1304"></div>
+      <div class="step" data-shot="1"><span class="num hand">2.</span><h3>Everything in its place</h3><p>Fridge, freezer, pantry, counter. Your whole kitchen in your pocket.</p><img class="mobile-shot" src="img/03-kitchen.jpg" alt="" loading="lazy" width="600" height="1304"></div>
+      <div class="step" data-shot="2"><span class="num hand">3.</span><h3>Eat it before it goes bad</h3><p>Tum Tum shows what to use first, every day.</p><img class="mobile-shot" src="img/04-eat-first.jpg" alt="" loading="lazy" width="600" height="1304"></div>
+      <div class="step" data-shot="3"><span class="num hand">4.</span><h3>Dinner from what you have</h3><p>Ideas that use what's already in your kitchen.</p><img class="mobile-shot" src="img/05-dinner.jpg" alt="" loading="lazy" width="600" height="1304"></div>
+      <div class="step" data-shot="4"><span class="num hand">5.</span><h3>Shop without double buying</h3><p>Your list knows what you already have at home.</p><img class="mobile-shot" src="img/07-shopping.jpg" alt="" loading="lazy" width="600" height="1304"></div>
+      <div class="step" data-shot="5"><span class="num hand">6.</span><h3>Grow a little garden</h3><p>Every food you eat helps Tum Tum's garden grow.</p><img class="mobile-shot" src="img/06-garden.jpg" alt="" loading="lazy" width="600" height="1304"></div>
     </div>
     <div class="phone" aria-hidden="true">
       <div class="screen" id="screen">
@@ -342,10 +358,22 @@
     </div>
   </section>
 
+  <section class="more reveal" aria-label="Learn more">
+    <h2>Everything Tum Tum does</h2>
+    <div class="more-grid">
+      <a href="/features/grocery-receipt-scanner.html"><b>🧾</b>Grocery receipt scanner</a>
+      <a href="/features/fridge-and-pantry-tracker.html"><b>🧊</b>Fridge and pantry tracker</a>
+      <a href="/features/eat-first-food-expiration-tracker.html"><b>⏰</b>Know what to eat first</a>
+      <a href="/features/dinner-ideas-from-what-you-have.html"><b>🍝</b>Dinner from what you have</a>
+      <a href="/features/smart-shopping-list.html"><b>🛒</b>A smarter shopping list</a>
+      <a href="/blog/"><b>📖</b>Kitchen tips blog</a>
+    </div>
+  </section>
+
   <section class="promise reveal" aria-label="Our promise">
     <div><b>🙅</b><h3>No account</h3><p>Open it and start. No sign-up, no email.</p></div>
-    <div><b>🚫</b><h3>No ads</h3><p>Never. We don't track you or sell anything about you.</p></div>
-    <div><b>📱</b><h3>Your kitchen stays with you</h3><p>It lives on your iPhone. <a href="privacy.html">Privacy policy</a></p></div>
+    <div><b>🚫</b><h3>No ads</h3><p>Never. No ad tracking, and we never sell anything about you.</p></div>
+    <div><b>📱</b><h3>Your kitchen, on your iPhone</h3><p>Your kitchen list is saved on your phone. <a href="privacy.html">Privacy policy</a></p></div>
   </section>
 
   <div class="end reveal">
@@ -355,7 +383,7 @@
   </div>
 
   <footer>
-    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <nav><a href="/features/">Features</a><a href="/blog/">Blog</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
     <span>© 2026 Dhiraj Pandey</span>
   </footer>
 </main>
@@ -370,7 +398,9 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-  const preload = srcs => srcs.forEach(s => { const i = new Image(); i.src = s; });
+  const later = [];
+  const preload = srcs => later.push(...srcs);
+  addEventListener('load', () => setTimeout(() => later.forEach(s => { const i = new Image(); i.src = s; }), 600));
 
   /* ---------- Tum Tum in the hero: looks at you, blinks, talks ---------- */
   const tt = $('#tt'), tum = $('#tumtum'), bubble = $('#bubble'), stage = $('#stage');
